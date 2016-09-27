@@ -12,7 +12,7 @@ This repository provides some examples and scripts for working with common Azure
  * [Compute - Virtual Machine, Scale Sets](https://github.com/Azure/azure-cli-samples/blob/master/compute/compute.md)
  * [ARM - Resource deployment and management](https://github.com/Azure/azure-cli-samples/blob/master/arm/arm.md)
  * [Network - VNet, Load balancer, DNS](https://github.com/Azure/azure-cli-samples/blob/master/network/general.md)
- * (coming soon) Storage - Blobs, Queues, Tables, and Files
+ * [Storage - Blobs, Queues, Tables, and Files](https://github.com/Azure/azure-cli-samples/blob/master/storage/readme.md)
  * [Role-based Access Control (RBAC)](https://github.com/Azure/azure-cli-samples/blob/master/identity/rbac.md)
  
  
