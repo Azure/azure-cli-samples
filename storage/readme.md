@@ -1,7 +1,7 @@
 # Project Az (Python-based Azure CLI) Samples - Storage Service
 
 Compute Topics:
-* [General Storage Management](management.md)
+* [General Storage Management](readme.md)
 * [Managing Storage Blobs and Containers](blobs.md)
 * [Managing Storage Files, Shares, and Directories](files.md)
 * [Managing Storage Queues and Messages](queues.md)
