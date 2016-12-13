@@ -11,31 +11,31 @@ az group create -l westus -n MyRG
 ```
 
 Here are some useful commands that may help you on your journey
-* Delete this RG `az resource group delete -n MyRG`
-* Export to ARM template `az resource group export -n MyRG > ./MyTemplate.json`
+* Delete this RG `az group delete -n MyRG`
+* Export to ARM template `az group export -n MyRG > ./MyTemplate.json`
 
 
 # Managing Azure resources 
 
 Delete a resource generically
 ```
-az resource  delete -g MyRG --resource-type "Microsoft.Network/virtualNetworks" -n MyExampleVnet
+az resource delete -g MyRG --resource-type "Microsoft.Network/virtualNetworks" -n MyExampleVnet
 ```
 
 Export a resource group and create a new group using the template
 ```
-az resource group list
+az group list
 [...]
 
-az resource group export -n MyRG > ~/MyTemplate.json
+az group export -n MyRG > ~/MyTemplate.json
 
 cat ~/MyTemplate.json
 [...]
 
-az resource group deployment create --template-file-path ~/MyTemplate.json -g oDemo
+az group deployment create --template-file-path ~/MyTemplate.json -g oDemo
 [...]
 
-az resource group list --query "[?name=='oDemo']"
+az group list --query "[?name=='oDemo']"
 ```
 
 # Managing and working with tags
@@ -119,7 +119,7 @@ az resource set [...] --set-tag Owner=Accounting
 
 Register a new resource provider
 ```
-az resource provider register -n "Microsoft.ApiManagement"
+az provider register -n "Microsoft.ApiManagement"
 ```
 
 Unregister a resource provider
