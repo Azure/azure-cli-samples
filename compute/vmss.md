@@ -10,7 +10,7 @@ Compute Topics:
 When trying new things out, consider creating a new resource group to experiment with:
 > Many creation commands will use the resource group's location as a default value. 
 ```
-az resource group create -l westus -n MyRG
+az group create -l westus -n MyRG
 ```
 
 Here are some useful commands that may help you on your journey
