@@ -11,12 +11,12 @@ Compute Topics:
 When trying new things out, consider creating a new resource group to experiment with:
 > Many creation commands will use the resource group's location as a default value.
 ```
-az resource group create -l westus -n MyRG
+az group create -l westus -n MyRG
 ```
 
 Here are some useful commands that may help you on your journey
-* Delete this RG `az resource group delete -n MyRG`
-* Export to ARM template `az resource group export -n MyRG > ./MyTemplate.json`
+* Delete this RG `az group delete -n MyRG`
+* Export to ARM template `az group export -n MyRG > ./MyTemplate.json`
 
 > **NOTE** These examples assume your [connection string](management.md) has been set.
 
