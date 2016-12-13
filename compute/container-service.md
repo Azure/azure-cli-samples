@@ -14,8 +14,8 @@ az group create -l westus -n MyRG
 ```
 
 Here are some useful commands that may help you on your journey
-* Delete this RG `az resource group delete -n MyRG`
-* Export to ARM template `az resource group export -n MyRG > ./MyTemplate.json`
+* Delete this RG `az group delete -n MyRG`
+* Export to ARM template `az group export -n MyRG > ./MyTemplate.json`
 
 
 # Managing Azure Container Service (ACS)
