@@ -11,19 +11,19 @@ Compute Topics:
 When trying new things out, consider creating a new resource group to experiment with:
 > Many creation commands will use the resource group's location as a default value.
 ```
-az resource group create -l westus -n MyRG
+az group create -l westus -n MyRG
 ```
 
 Here are some useful commands that may help you on your journey
-* Delete this RG `az resource group delete -n MyRG`
-* Export to ARM template `az resource group export -n MyRG > ./MyTemplate.json`
+* Delete this RG `az group delete -n MyRG`
+* Export to ARM template `az group export -n MyRG > ./MyTemplate.json`
 
 # Working with storage accounts
 Before you can start using the storage service, you will first need to setup your
 storage account and set your connection string.  
 
 ```
-az storage account create -g MyRG -n DemoSA -l westus --type Standard_LRS
+az storage account create -g MyRG -n DemoSA -l westus --sku Standard_LRS
 ```
 
 You can view the newly created account with the following commands:
