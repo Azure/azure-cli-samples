@@ -30,7 +30,7 @@ az storage table exists -n MyTable
 az storge table delete -n MyTable --fail-not-exist
 ```
 
-# Managing queue messages
+# Managing table messages
 
 To insert a new entity into a table, you have to define a set of key-value pairs
 separated by spaces.  You must include both `PartitionKey` and `RowKey` pairs as
