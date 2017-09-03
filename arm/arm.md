@@ -124,12 +124,12 @@ az provider register -n "Microsoft.ApiManagement"
 
 Unregister a resource provider
 ```
-az resource provider unregister -n "Microsoft.ApiManagement"
+az provider unregister -n "Microsoft.ApiManagement"
 ```
 
 Example query for locations that support a given resource provider
 ```
-az resource provider list --query "[?namespace=='Microsoft.ApiManagement'].[resourceTypes[].locations[*]]" | grep '"'
+az provider list --query "[?namespace=='Microsoft.ApiManagement'].[resourceTypes[].locations[*]]" | grep '"'
 ```
 
 Example query for usage and usage limits on a resource provider
