@@ -28,7 +28,7 @@ az storage container create -n mycontainer
 az storage container exists -n mycontainer
 az storage container list
 az storage container show -n mycontainer
-az storge container delete -n mycontainer --fail-not-exist
+az storage container delete -n mycontainer --fail-not-exist
 ```
 
 # Managing storage blobs
