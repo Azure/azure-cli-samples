@@ -19,14 +19,19 @@ Here are some useful commands that may help you on your journey
 
 
 # Managing Azure Container Service (ACS)
+
+Please check
+before
+[how to create a container registry](https://github.com/MicrosoftDocs/azure-docs/blob/master/articles/container-registry/container-registry-get-started-azure-cli.md) 
+
 This command will create a new container service for either Docker Swarm or DCOS
 
 ```
 # Using DCOS - default
-az vm container create -g MyRG -n ACS1 --dns-name-prefix acsdemo
+az container create --name ACS1 -g MyRg --image MyRg.azurecr.io/imagename --dns-name-prefix acsdemo
 
 # Using Docker Swarm
-az vm container create -g MyRG -n ACS1 --dns-name-prefix acsdemo --orchestrator-type Swarm
+az container create -g MyRG -n ACS1 --dns-name-prefix acsdemo --orchestrator-type Swarm
 
 # Use SSH into jumpbox and use Swarm or DCOS (Mesos, Marathon) tooling
 ```
