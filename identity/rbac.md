@@ -35,6 +35,7 @@ Here are some useful commands that may help you on your journey
        "Microsoft.Support/*"
      ],
      "AssignableScopes": ["/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx","/subscriptions/yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy"]
+}
 ```
 
 Create a role
